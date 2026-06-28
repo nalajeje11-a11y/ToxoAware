@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-toxo-primary: #10b981;
+  --color-toxo-secondary: #0ea5e9;
+  --color-toxo-dark: #0f172a;
+}
+
+body {
+  /* Background pattern mesh gradient ringan */
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(160, 100%, 74%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(199, 100%, 74%, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Sembunyikan scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.bg-mesh {
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(160, 100%, 74%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(199, 100%, 74%, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+}
